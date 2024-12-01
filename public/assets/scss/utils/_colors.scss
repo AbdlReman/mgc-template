@@ -1,0 +1,65 @@
+   $colors: (
+       common:(
+            white: #ffffff,
+            black: #070707,
+            dark:#0b0b0b,
+            dark-2:#0f0f0f,
+    ),
+       heading: (
+            primary: #070707,
+    ),
+       grey: (
+            1:#777777,
+            2:#acb3b7,
+            3:#757c80,
+            4:#999999,
+            5:#bbbbbb,
+            6:#c8c8c8,
+            7:#6e6e6e,
+            8:#a6a6a6,
+
+       ),
+       text: (
+            body:#000,
+            1:#000,
+    ),
+       theme: (
+            bg:#f8fcfc,
+            bg-2:#f6f6f6,
+            bg-3:#f8fbff,
+            bg-4:#d3dbdf,
+            bg-5:#eef4f7,
+            bg-6:#f7f7f7,
+            bg-7:#f2f5f7,
+            bg-8:#e5eaee,
+            bg-9:#ecf8ff,
+            redical:#0a61c1,
+            red:#0a61c1,
+            cornblue:#0a61c1,
+            vogue:#0a61c1,
+            orange:#0a61c1,
+            mirage:#0a61c1,
+            bouquet:#b685a1,
+            wine:#50223c,
+            mandalay:#b08920,
+            seagreen:#0d496b,
+            lochmara:#0686D8,
+            atlantis:#80BE2D,
+            picton:#5FB0E5,
+
+    ),
+       border: (
+            1: #e6e6e6,
+            2: #dce9e9,
+            3: #ececec,
+            4: #efefef,
+            5: #f0f0f0,
+            6: #f3f3f3,
+            7: #e4e4e4,
+            8: #ededed,
+            9: #f0f0f0,
+            10: #1c1c1c,
+            11:#ebebeb,
+            12:#e7e7e7
+    )
+   );

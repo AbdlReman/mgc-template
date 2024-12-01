@@ -1,0 +1,83 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 17. HELP CSS
+/*----------------------------------------*/
+
+.tp-help-item {
+    padding: 50px;
+    border: 2px solid #f6f6f6;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    @include transition(.3s);
+    @media #{$xs} {
+        padding: 50px 15px;
+        
+    }
+    &__icon {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+        width: 140px;
+        height: 140px;
+        display: inline-block;
+        margin-bottom: 35px;
+        border-radius: 50%;
+        & span {
+            font-size: 60px;
+            display: inline-block;
+            text-align: center;
+            line-height: 140px;
+            color: var(--tp-theme-cornblue);
+        }
+
+    }
+
+    &__title {
+        font-size: 24px;
+
+        a {
+            background-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
+            display: inline;
+            background-size: 0% 1px, 0 1px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 0.4s linear;
+
+            &:hover {
+                background-size: 0% 1px, 100% 1px;
+            }
+        }
+    }
+
+    & p {
+        font-size: 16px;
+        color: var(--tp-grey-1);
+    }
+
+    &:hover {
+        border-color: var(--tp-theme-cornblue);
+        & .tp-help-item__icon {
+            & span {
+
+                animation-name: wobble-vertical;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: 1
+            }
+        }
+    }
+}
+
+.bg {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f6f6f6;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 311px;
+    top: 745px;
+    width: 414px;
+    height: 372px;
+    z-index: 84;
+}

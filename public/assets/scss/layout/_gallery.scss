@@ -1,0 +1,18 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 13. GALLERY CSS
+/*----------------------------------------*/
+
+.tp-gl-item{
+    & img{
+       width: 100%;
+    }
+}
+
+.tp-mp-galley{
+    @media #{$xs} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

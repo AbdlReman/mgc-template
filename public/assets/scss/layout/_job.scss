@@ -1,0 +1,123 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/* 16. JOB CSS
+/*----------------------------------------*/
+
+.tp-job-item {
+    border-radius: 8px;
+    padding: 30px 40px;
+    margin-bottom: 80px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+    @include transition(.3s);
+    margin-top: -50px;
+    @media #{$xs} {
+        padding: 30px;
+    }
+    &__info {
+        span {
+            color: #757c80;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+
+        a {
+            background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+            display: inline;
+            background-size: 0% 1px, 0 1px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 0.4s linear;
+
+            &:hover {
+                background-size: 0% 1px, 100% 1px;
+            }
+        }
+    }
+
+    &__btn {
+        color: #b2b8bc;
+        font-weight: 700;
+
+        & :hover {
+            color: #ccc8ff;
+        }
+
+        & i {
+            padding-left: 8px;
+            padding-top: 5px;
+            display: inline-block;
+        }
+
+    }
+
+    &:hover {
+        background-color: var(--tp-theme-cornblue);
+
+        & .tp-job-item {
+            &__info {
+                span {
+                    color: #ccc8ff;
+                }
+
+            }
+
+            &__title {
+                color: #fff;
+            }
+
+            &__btn {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.tp-job-details-box {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #efefef;
+    border-radius: 8px;
+    @media #{$xs,$md} {
+        padding:30px 15px;
+    }
+}
+
+.tp-inner-pg-list {
+    & ul {
+        li {
+            font-size: 18px;
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            color: #757c80;
+            &::before {
+                content: "";
+                width: 4px;
+                height: 4px;
+                position: absolute;
+                left: 0;
+                top: 10px;
+                background-color: rgb(7, 7, 7);
+                display: inline-block;
+                border-radius: 50%;
+
+            }
+        }
+    }
+}
+
+.job-about-cicle-img{
+    & img {
+        animation: rotate 15s linear infinite;
+    }
+
+}

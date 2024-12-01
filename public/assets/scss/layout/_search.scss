@@ -1,0 +1,32 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 21. SEARCH CCSS 
+/*----------------------------------------*/
+
+.tp-search-item {
+    padding-right: 80px;
+    margin-bottom: 60px;
+    @media #{$xs} {
+        padding-right: 0;
+    }
+    &-meta {
+
+        & span {
+            color: var(--tp-common-black);
+        }
+        a{
+            color: var(--tp-theme-cornblue);
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        & .spt {
+            color: var(--tp-grey-1);   
+        }
+    }
+    &__title{
+        font-size: 24px;
+    }
+
+}

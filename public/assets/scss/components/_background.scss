@@ -1,0 +1,62 @@
+@use '../utils' as *;
+
+/*--
+    - Background color
+-----------------------------------------*/
+
+.white-bg {
+	background-color: var(--tp-common-white);
+}
+
+.black-bg {
+	background-color: var(--tp-common-black);
+}
+.red-bg{
+	background-color: var(--tp-theme-red);
+}
+.dark-bg {
+	background-color: var(--tp-common-dark);
+}
+.dark-bg-2 {
+	background-color: var(--tp-common-dark-2);
+}
+
+.cornblue-bg{
+	background-color: var(--tp-theme-cornblue);
+}
+.vogue-bg{
+	background-color: var(--tp-theme-vogue);
+}
+.wine-bg{
+	background-color: var(--tp-theme-wine);
+}
+.seagreen-bg{
+	background-color: var(--tp-theme-seagreen);
+}
+.theme-bg{
+	background-color: var(--tp-theme-bg);
+}
+.theme-bg-2{
+	background-color: var(--tp-theme-bg-2)
+}
+.theme-bg-3{
+	background-color: var(--tp-theme-bg-3)
+}
+.theme-bg-4{
+	background-color: var(--tp-theme-bg-4)
+}
+.theme-bg-5{
+	background-color: var(--tp-theme-bg-5)
+}
+.theme-bg-6{
+	background-color: var(--tp-theme-bg-6)
+}
+.theme-bg-7{
+	background-color: var(--tp-theme-bg-7)
+}
+.theme-bg-8{
+	background-color: var(--tp-theme-bg-8)
+}
+.theme-bg-9{
+	background-color: var(--tp-theme-bg-9)
+}

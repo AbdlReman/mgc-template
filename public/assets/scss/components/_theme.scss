@@ -1,0 +1,377 @@
+@use '../utils' as *;
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Template Name – HTML5 Template
+    Author: Theme Pure
+    Support: basictheme@gmail.com
+    Description: Template Name  – HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+    03. MEAN MENU CSS
+	04. HERO CSS
+	05. SLIDER CSS
+	06. ABOUT CSS
+	07. TEAM CSS
+	08. SERVICES CSS
+	09. TESTIMONIAL CSS
+	10. BRAND CSS
+	11. PROJECT CSS
+	12. PORTFOLIO CSS
+	13. GALLERY CSS
+	14. CTA CSS
+	15. FAQ CSS
+	16. JOB CSS
+	17. HELP CSS
+	18. PRICE CSS
+	19. FEATURE CSS 
+	20. NEWSLETTER CSS
+	21. SEARCH CCSS 
+	22. BLOG CSS
+	23. SIDEBAR CSS
+	24. SHOP CSS 
+	25. CHECKOUT CSS 
+	26. FOOTER CSS
+
+**********************************************/
+
+
+
+
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS
+/*----------------------------------------*/
+
+@import url($font-url);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*---------------------------------
+	typography css start 
+---------------------------------*/
+body {
+	font-family: var(--tp-ff-body);
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--tp-text-body);
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--tp-ff-heading);
+	color: var(--tp-heading-primary);
+	margin-top: 0px;
+	line-height: 1.2;
+	font-weight: 700;
+	@include transition(.3s);
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: var(--tp-ff-p);
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--tp-text-body);
+	margin-bottom: 15px;
+	line-height: 26px;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+.btn,
+button,
+span,
+p,
+i,
+input,
+select,
+textarea,
+li,
+img,
+svg path,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include transition(.3s);
+}
+
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+a,
+button {
+	color: inherit;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+input {
+	outline: none;
+}
+
+input[type="color"] {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	border-radius: 50%;
+}
+
+
+
+*::-moz-selection {
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
+	text-shadow: none;
+}
+
+::selection {
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
+	text-shadow: none;
+}
+
+
+*::-moz-placeholder {
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
+	opacity: 1;
+}
+
+*::-webkit-input-placeholder {
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
+	opacity: 1;
+}
+
+*::-ms-input-placeholder {
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
+	opacity: 1;
+}
+
+*::placeholder {
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
+	opacity: 1;
+}
+
+/*---------------------------------
+    common classes css start 
+---------------------------------*/
+
+.w-img {
+	& img {
+		width: 100%;
+	}
+}
+
+.m-img {
+	& img {
+		max-width: 100%;
+	}
+}
+
+.fix {
+	overflow: hidden
+}
+
+.clear {
+	clear: both;
+}
+
+
+.z-index-1 {
+	z-index: 1;
+}
+
+.z-index-11 {
+	z-index: 11;
+}
+
+.overflow-y-visible {
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+.include-bg {
+	@include background();
+}
+
+.tp-border-bottom {
+	border-bottom: 1px solid var(--tp-border-1);
+}
+
+.tp-border-top {
+	border-top: 1px solid var(--tp-border-1);
+}
+
+.tp-border-bottom-dark {
+	border-bottom: 1px solid #1c1c1c;
+}
+
+.tp-border-top-dark {
+	border-top: 1px solid #1c1c1c;
+}
+
+
+.body-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+
+	&.opened {
+		opacity: 1;
+		visibility: visible;
+		cursor: pointer;
+	}
+}
+
+.tp-back-to-top {
+	position: fixed;
+	bottom: -40px;
+	right: 40px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background: #eb8242;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	opacity: 0;
+	transform: scale(0.3);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	z-index: 9;
+	@include transition(.3s);
+	&:hover{
+		color: white;
+	}
+
+	&.show {
+		bottom: 40px;
+		right: 40px;
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+		color: white;
+	}
+}
