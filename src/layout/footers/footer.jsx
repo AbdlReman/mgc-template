@@ -1,5 +1,5 @@
-import SocialLinks from '@/src/common/social-links';
-import CommonFooter, { FooterCopyRight } from './common-footer';
+import SocialLinks from "@/src/common/social-links";
+import CommonFooter, { FooterCopyRight } from "./common-footer";
 
 const footer_links = [
   {
@@ -12,7 +12,6 @@ const footer_links = [
       { title: "Home", link: "/" },
       { title: "News & Feeds", link: "/blog" },
       { title: "Get In Touch", link: "/contact" },
-   
     ],
   },
 ];
@@ -22,18 +21,27 @@ const footer_content = {
   about: "About Us",
   about_des: (
     <>
-      Your goals are individual. We believe business advice should be too, so
-      we have to help your business thrive in this work environment situation.
+      Your goals are individual. We believe business advice should be too, so we
+      have to help your business thrive in this work environment situation.
     </>
   ),
   phone_icon: "/assets/img/footer/call-icon.png",
   address: "Phone",
-  phone: "(+92) 304-111-3309",
+  phone: "+923020058237",
   email_icon: "/assets/img/footer/message-rgb-ison.png",
-  email: "info@maidaangroup.com",
+  email: "info@maidaan.com",
 };
 
-const { footer_logo, about, about_des, phone_icon, address, phone, email_icon, email } = footer_content;
+const {
+  footer_logo,
+  about,
+  about_des,
+  phone_icon,
+  address,
+  phone,
+  email_icon,
+  email,
+} = footer_content;
 
 const Footer = ({ tp_border }) => {
   return (
@@ -95,10 +103,15 @@ const Footer = ({ tp_border }) => {
                 {/* Get In Touch Section */}
                 <div className="col-xl-3 col-md-6">
                   <div className="tp-footer__widget mb-40">
-                    <h3 className="tp-footer__widget-title mb-35">Get In Touch</h3>
+                    <h3 className="tp-footer__widget-title mb-35">
+                      Get In Touch
+                    </h3>
                     <div className="tp-footer-cta d-flex align-items-center mb-30">
                       <span className="call-icon">
-                        <img src="/assets/img/footer/footer-rbg-call.png" alt="" />
+                        <img
+                          src="/assets/img/footer/footer-rbg-call.png"
+                          alt=""
+                        />
                       </span>
                       <span>
                         <span className="d-block mb-0">{address}</span>
@@ -120,30 +133,29 @@ const Footer = ({ tp_border }) => {
                     </div>
                   </div>
                 </div>
-                <div className="col-xl-4 col-md-6"> 
-                    <div className="tp-footer__widget bs-pl-60 mb-40">
-                      <h3 className="tp-footer__widget-title mb-35">
-                        Subscribe Now
-                      </h3>
-                      <p>Subscribe to get the latest news from us</p>
+                <div className="col-xl-4 col-md-6">
+                  <div className="tp-footer__widget bs-pl-60 mb-40">
+                    <h3 className="tp-footer__widget-title mb-35">
+                      Subscribe Now
+                    </h3>
+                    <p>Subscribe to get the latest news from us</p>
 
-                      <div className="tp-footer-from p-relative">
-                        <form onSubmit={(e) => e.preventDefault()}>
-                          <span>
-                            <i className="fas fa-envelope-open"></i>
-                          </span>
-                          <input type="email" placeholder="Enter your mail" />
-                          <button type="submit">
-                            <i className="fas fa-paper-plane"></i> <b></b>
-                          </button>
-                        </form>
-                      </div>
-                      <p className="tp-form-note p-0 mt-5 mb-30">
-                        
-                        <span>**</span>We are not going to save your data
-                      </p>
+                    <div className="tp-footer-from p-relative">
+                      <form onSubmit={(e) => e.preventDefault()}>
+                        <span>
+                          <i className="fas fa-envelope-open"></i>
+                        </span>
+                        <input type="email" placeholder="Enter your mail" />
+                        <button type="submit">
+                          <i className="fas fa-paper-plane"></i> <b></b>
+                        </button>
+                      </form>
                     </div>
+                    <p className="tp-form-note p-0 mt-5 mb-30">
+                      <span>**</span>We are not going to save your data
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
             {/* Footer Copy Right */}

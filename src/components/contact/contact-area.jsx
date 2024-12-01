@@ -1,20 +1,19 @@
 import React from "react";
 
 const contact_data = [
- 
   {
     id: 2,
     titel: "Inquiries",
-    email: "support@maidaangroup.com",
-    phone: "(+92) 304-111-3309",
-    tel: "(+92) 304-111-3309",
+    email: "support@maidaan.com",
+    phone: "+92 302 0058237",
+    tel: "+92 302 0058237",
   },
   {
     id: 3,
     titel: "General",
-    email: "info@maidaangroup.com",
-    phone: "(+92) 304-111-3309",
-    tel: "(+92) 304-111-3309",
+    email: "info@maidaan.com",
+    phone: "+92 302 0058237",
+    tel: "+92 302 0058237",
   },
 ];
 
@@ -22,7 +21,12 @@ const contact_data = [
 const contact_info = {
   img: "/assets/img/cta/contact-page-1.jpg",
   hi_text: "Say Hello",
-  title: <>At Maidaan Group, we blend creativity with strategy to deliver impactful branding solutions.</>,
+  title: (
+    <>
+      At Maidaan Group, we blend creativity with strategy to deliver impactful
+      branding solutions.
+    </>
+  ),
 };
 
 const { img, hi_text, title } = contact_info;

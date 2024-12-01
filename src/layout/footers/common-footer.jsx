@@ -59,26 +59,37 @@ const CommonFooter = () => {
 
 export default CommonFooter;
 
-
-
-
-
-
-
 // copy right text
 const footer_content = {
-  copy_right_info:  <> Copyright & Design By <a href="#">@maidaangroup</a> - {new Date().getFullYear()} </>,
+  copy_right_info: (
+    <>
+      {" "}
+      Copyright & Design By{" "}
+      <a href="https://alightsol.com/">@Alight Solution</a> -{" "}
+      {new Date().getFullYear()}{" "}
+    </>
+  ),
 };
 
 const { copy_right_info } = footer_content;
 
-export const FooterCopyRight = ({style_3, style_7, style_9}) => {
+export const FooterCopyRight = ({ style_3, style_7, style_9 }) => {
   return (
-    <> 
-      <div className={`tp-footer__bottom pt-25 pb-25 ${style_3 ? "da-ft-copyright-bg" : ""} ${style_7 ? "law-footer__bottom red-bg"  :''} ${style_9 ? "ha-footer-copyright" : ""}`}>  
+    <>
+      <div
+        className={`tp-footer__bottom pt-25 pb-25 ${
+          style_3 ? "da-ft-copyright-bg" : ""
+        } ${style_7 ? "law-footer__bottom red-bg" : ""} ${
+          style_9 ? "ha-footer-copyright" : ""
+        }`}
+      >
         <div className="row align-items-center">
           <div className="col-md-8 col-12">
-            <div className={`tp-copyrigh-text ${style_3 ? "" : "text-center text-md-start"}`}>
+            <div
+              className={`tp-copyrigh-text ${
+                style_3 ? "" : "text-center text-md-start"
+              }`}
+            >
               <span>{copy_right_info}</span>
             </div>
           </div>
